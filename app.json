@@ -25,7 +25,15 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-sqlite"
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/assets/notification.png",
+          "color": "#ffffff",
+          "enableBackgroundRemoteNotifications": true
+        }
+      ]
     ]
   }
 }
